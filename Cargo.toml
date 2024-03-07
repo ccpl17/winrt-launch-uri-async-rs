@@ -1,0 +1,24 @@
+[package]
+name = "winrt-launch-uri-async"
+authors = ["Cenlun Chung Po Lun <104301294+ccpl17@users.noreply.github.com>"]
+edition = "2021"
+description = "WinRT Launcher.LaunchUriAsync Method Rust Implement"
+readme = "README.md"
+homepage = "https://learn.microsoft.com/uwp/api/windows.system.launcher.launchuriasync"
+repository = "https://github.com/ccpl17/winrt-launch-uri-async"
+license = "MIT"
+
+[dependencies.tokio]
+version = "1.36.0"
+features = [
+    "rt",
+    "rt-multi-thread",
+    "macros"
+]
+
+[dependencies.windows]
+version = "0.54.0"
+features = [
+    "Foundation",
+    "System"
+]
